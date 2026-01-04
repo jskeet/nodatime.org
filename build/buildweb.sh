@@ -36,6 +36,9 @@ then
   cp -r tmp/site $ROOT/src/NodaTime.Web/docfx
 fi
 
+echo "Unstable TOC"
+cat tmp/web/unstable/api/toc.yml
+
 # Build the web site ASP.NET Core
 rm -rf $ROOT/src/NodaTime.Web/bin/Release
 # Make sure minification happens before publish...
