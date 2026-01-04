@@ -20,14 +20,6 @@ fi
 
 echo "Building with BUILD_ENVIRONMENT=$BUILD_ENVIRONMENT"
 
-if [[ "$BUILD_ENVIRONMENT" == "EXPERIMENTAL" ]]
-then
-  skip_api_build=true
-  rm -rf $ROOT/src/NodaTime.Web/docfx
-  mkdir $ROOT/src/NodaTime.Web/docfx
-  echo "Test document" > $ROOT/src/NodaTime.Web/docfx/docfx.txt
-fi
-
 # Build the API docs with docfx
 if [[ "$skip_api_build" != "true" ]]
 then
