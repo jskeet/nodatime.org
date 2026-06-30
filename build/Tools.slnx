@@ -6,6 +6,9 @@
     <BuildType Name="Release-Signed" />
     <BuildType Name="Release-Unsigned" />
   </Configurations>
+  <Folder Name="/Properties/">
+    <File Path="../Directory.Packages.props" />
+  </Folder>
   <Folder Name="/Scripts/">
     <File Path="buildapidocs.sh" />
     <File Path="buildweb.sh" />
