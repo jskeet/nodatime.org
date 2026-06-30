@@ -24,7 +24,7 @@ namespace DocfxAnnotationGenerator
             XDocument manifest = null;
             var assemblies = new List<BuildAssembly>();
 
-            using (var zip = ZipArchive.Open(file))
+            using (var zip = ZipArchive.OpenArchive(file))
             {
                 foreach (var entry in zip.Entries)
                 {
